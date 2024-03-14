@@ -1,5 +1,10 @@
-INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU1', 'Apple', 'Brand1', 'Fruits', (RANDOM() * 10), TRUE);
-INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU2', 'Banana', 'Brand2', 'Fruits', (RANDOM() * 10), TRUE);
-INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU3', 'Carrot', 'Brand3', 'Vegetables', (RANDOM() * 10), false);
-INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU4', 'Bread', 'Brand4', 'Bakery', (RANDOM() * 10), TRUE);
-INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU5', 'Milk', 'Brand5', 'Dairy', (RANDOM() * 10), false);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU6', 'Coca-Cola', 'Coca-Cola', 'Beverages', 1.99, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU7', 'Classic Roast Coffee', 'Folgers', 'Beverages', 3.99, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU8', 'Corn Flakes', 'Kelloggs', 'Cereals', 2.99, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU9', 'Whole Grain Bread', 'Wonder Bread', 'Bakery', 2.49, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU10', 'Creamy Peanut Butter', 'Jif', 'Grocery', 2.89, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU11', 'Original Potato Chips', 'Lays', 'Snacks', 3.59, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU12', 'Milk Chocolate', 'Hersheys', 'Candy & Chocolate', 1.59, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU13', 'Vanilla Ice Cream', 'Ben & Jerrys', 'Frozen Foods', 4.69, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU14', 'Tomato Ketchup', 'Heinz', 'Condiments', 2.79, TRUE);
+INSERT INTO product ( sku, name, brand, category, price, is_active) VALUES ( 'SKU15', 'Traditional Pasta Sauce', 'Ragu', 'Pasta & Pasta Sauces', 1.89, TRUE);
