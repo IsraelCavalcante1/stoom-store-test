@@ -46,6 +46,3 @@ Para mais detalhes sobre os endpoints e os modelos de dados, consulte a document
 
 Sinta-se à vontade para contribuir com este projeto. Se você encontrar algum problema ou tiver alguma sugestão de melhoria, por favor, abra uma issue ou um pull request.
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT.
