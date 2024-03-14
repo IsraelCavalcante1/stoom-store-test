@@ -1,22 +1,51 @@
-**Seja bem-vindo candidato!**
+# Stoom Store API
 
-Como um desenvolvedor Back-End na Stoom uma das maiores responsabilidades que você vai ter é desenvolver funcionalidades e corrigir bugs em sistemas de e-commerce de larga escala que utilizam Spring Boot. Com base nisso, precisamos de sua ajuda para construir a nossa loja Stoom, que deve conter as seguintes funcionalidades:
+Bem-vindo à API da Stoom Store! Esta API foi desenvolvida para gerenciar produtos de uma loja de e-commerce. Ela permite criar, ler, atualizar e excluir produtos, além de fornecer funcionalidades para buscar produtos por marca e categoria.
 
-1. Deve ser desenvolvida uma API de CRUD de produtos
-2. Os produtos devem ser enriquecidos com as informações que você julgar relevante para o funcionamento em uma loja, algumas são obrigatórias:
-    - Categorias
-    - Marca
-    - Preços
-3. Deve existir um endpoint na API para a busca de produtos que será utilizada na loja
-4. Deve existir um endpoint que lista os produtos de uma determinada Marca
-5. Deve existir um endpoint que lista os produtos de uma determinada Categoria
-6. Produtos podem ser inativados para não aparecerem na busca ou nas listagens sem a necessidade de serem deletados para poderem ser reativados posteriormente
-7. Marcas e categorias também podem ser inativados para não aparecerem na loja
+## Recursos
 
-**Informações relevantes**:
-- Atente-se à todos os pré-requisitos estabelecidos, porém não limite-se a eles, ideias novas ou melhorias são sempre bem-vindas :smiley:
-- Você tem total liberdade para fazer qualquer tipo de alteração em qualquer ponto do código (contanto que não alterem a maneira de execução da aplicação)
-- Se possível, adicione uma collection do Postman no repositório para conseguirmos testar o código da mesma forma que você
-- Boas práticas, legibilidade, testes e performance são alguns dos pontos que serão considerados durante a avaliação
+- CRUD de produtos
+- Busca de produtos por marca
+- Busca de produtos por categoria
+- Inativação de produtos, marcas e categorias
 
-**Boa sorte!**
+## Tecnologias Utilizadas
+
+- Java
+- Spring Boot
+- Maven
+- Docker
+- Swagger para documentação da API
+
+## Como Executar
+
+1. Clone o repositório para a sua máquina local.
+2. Navegue até o diretório do projeto.
+3. Execute o comando `mvn clean install` para construir o projeto e gerar o arquivo JAR.
+4. Após a construção bem-sucedida do projeto, execute o comando `docker-compose up` para iniciar a aplicação.
+
+## Documentação da API
+
+A documentação da API está disponível através do Swagger. Você pode acessá-la em `http://localhost:8080/swagger-ui/` após iniciar a aplicação.
+
+## Endpoints da API
+
+Os endpoints da API estão disponíveis no caminho `/api/products`. Aqui estão alguns exemplos:
+
+- `GET /api/products`: Retorna todos os produtos.
+- `GET /api/products/{id}`: Retorna o produto com o ID especificado.
+- `POST /api/products`: Cria um novo produto.
+- `PUT /api/products/{id}`: Atualiza o produto com o ID especificado.
+- `DELETE /api/products/{id}`: Exclui o produto com o ID especificado.
+- `GET /api/products/brand/{brand}`: Retorna todos os produtos da marca especificada.
+- `GET /api/products/category/{category}`: Retorna todos os produtos da categoria especificada.
+
+Para mais detalhes sobre os endpoints e os modelos de dados, consulte a documentação da API no Swagger.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com este projeto. Se você encontrar algum problema ou tiver alguma sugestão de melhoria, por favor, abra uma issue ou um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.

@@ -1,28 +1,38 @@
 package br.com.stoom.store.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 
 @Entity
+@ApiModel(description = "Detalhes sobre o produto")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
+    @ApiModelProperty(notes = "SKU do produto, não pode ser nulo", required = true, position = 1)
     @Column (name = "sku", nullable = false, unique = true)
     private String sku;
 
+    @ApiModelProperty(notes = "Nome do produto, não pode ser nulo", required = true, position = 2)
     @Column(name = "name", nullable = false)
     private String name;
+    @ApiModelProperty(notes = "Marca do produto, não pode ser nulo", required = true, position = 3)
 
     @Column(name = "brand", nullable = false)
     private String brand;
+    @ApiModelProperty(notes = "Categoria do produto, não pode ser nulo", required = true, position = 4)
 
     @Column(name = "category", nullable = false)
     private String category;
+    @ApiModelProperty(notes = "Preço do produto, não pode ser nulo", required = true, position = 5)
 
     @Column(name = "price", nullable = false)
     private Double price;
+    @ApiModelProperty(notes = "Indica se o produto está ativo, não pode ser nulo", required = true, position = 6)
 
     @Column(name = "isActive", nullable = false)
     private Boolean isActive;
