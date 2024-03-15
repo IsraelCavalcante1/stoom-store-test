@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "cbc03511-aee9-40f6-8ffe-bbdb578ff3ab",
+		"name": "Stoom Store Product API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18057814",
+		"_collection_link": "https://orange-trinity-153386.postman.co/workspace/USER-DATA~6d832339-3c02-4609-9c77-6b21a2f5bc42/collection/18057814-cbc03511-aee9-40f6-8ffe-bbdb578ff3ab?action=share&creator=18057814&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "FindAll Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products?isOnlyActive=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "isOnlyActive",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindById Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products?isOnlyActive=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "isOnlyActive",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByBrand Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/brand/Brand3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"brand",
+						"Brand3"
+					],
+					"query": [
+						{
+							"key": "isOnlyActive",
+							"value": "false",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByCategory Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/category/Bakery?isOnlyActive=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"category",
+						"Bakery"
+					],
+					"query": [
+						{
+							"key": "isOnlyActive",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"SKU123\",\r\n    \"name\": \"Apple\",\r\n    \"brand\": \"Brand1\",\r\n    \"category\": \"Fruits\",\r\n    \"price\": 0.99,\r\n    \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"SKU999\",\r\n    \"name\": \"Orange\",\r\n    \"brand\": \"Brand6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Partial Product Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"SKU999\",\r\n    \"name\": \"Orange\",\r\n    \"brand\": \"Brand6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
