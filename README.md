@@ -15,6 +15,7 @@ Bem-vindo à API da Stoom Store! Esta API foi desenvolvida para gerenciar produt
 - Spring Boot
 - Maven
 - Docker
+- PostgreSQL 
 - Swagger para documentação da API
 
 ## Como Executar
